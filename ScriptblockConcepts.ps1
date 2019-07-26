@@ -20,7 +20,7 @@ $foo2 = {
     Write-Host "Hello $arg from Foo2 ScriptBlock" -ForegroundColor Red
 }
 
-
+#scriptblock as a argument in function
 function Run-Foo([ScriptBlock] $cb, $fooArg){
 
     #fake getting the args to pass into callback... or it could be passed in...
@@ -34,7 +34,7 @@ function Run-Foo([ScriptBlock] $cb, $fooArg){
 }
 
 Clear-Host
-
+#calling functions
 Run-Foo -cb $foo 
 Run-Foo -cb $foo 
 
