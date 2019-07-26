@@ -1,3 +1,6 @@
+#Require version 3.0
+#Author - Akshi Srivastava
+
 $variable = 'foo'
 $myscriptblock = { "$variable bar" }
 & $myscriptblock
